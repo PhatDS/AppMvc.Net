@@ -1,0 +1,18 @@
+@model ASPMVC.Models.ProductModel
+
+
+@{
+    var product2 = ViewData["product"] as ProductModel;
+}
+
+<p>@ViewData["Title"]</p>
+
+<div class = "card bg-primary text-while">
+    <h1 class = "card-header">@product2.Name</h1>
+    <div class = "card-body">
+    <p class = "card-text">
+        Giá : @product2.Price
+    </p>
+    </div>
+</div>
+
